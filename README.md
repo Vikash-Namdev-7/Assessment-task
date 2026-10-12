@@ -1,16 +1,39 @@
-# React + Vite
+# Assessment Quiz Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Setup Instructions
+Clone the repository and navigate to the project directory:
+```bash
+git clone https://github.com/Vikash-Namdev-7/Assessment-task.git
+cd Assessment-task
+```
 
-Currently, two official plugins are available:
+## How to Install Dependencies
+Run the following command to install all required dependencies:
+```bash
+npm install
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## How to Run the Project Locally
+Start the development server:
+```bash
+npm run dev
+```
+Open your browser and visit: `http://localhost:5173`
 
-## React Compiler
+## Technologies Used
+- **React**: Component structure and UI rendering
+- **Tailwind CSS**: Responsive styling and layout
+- **Vite**: Build tool and local development server
+- **JavaScript (ES6+)**: Application logic
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Important Implementation Details
+- **Single Reducer State Management**: Uses React's `useReducer` hook (`quizReducer.js`) to centrally manage:
+  - Questions list
+  - Current question index
+  - User selected answers
+  - 10-minute countdown timer
+  - Quiz status (`idle`, `active`, `finished`)
+- **10-Minute Countdown & Auto-Submit**: Global 10-minute timer that automatically submits the assessment when it hits 0.
+- **LocalStorage Persistence**: Assessment progress is saved to `localStorage` on every change and restored upon page refresh, allowing users to resume where they left off.
+- **Results & Review Section**: Evaluates final score and percentage, and provides a review of each question showing user answers, correct answers, and pass/fail indicators.
+- **Responsive Layout**: Designed with Tailwind CSS to ensure a smooth layout across mobile, tablet, laptop, and desktop screens without horizontal overflow.
