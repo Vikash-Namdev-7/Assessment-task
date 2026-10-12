@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "question": "Which hook is used in React to manage state in a functional component?",
+    "options": [
+      "useEffect",
+      "useState",
+      "useContext",
+      "useReducer"
+    ],
+    "correctAnswer": "useState"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary purpose of the Virtual DOM in React?",
+    "options": [
+      "To directly manipulate browser HTML elements",
+      "To optimize rendering performance by minimizing direct DOM manipulations",
+      "To replace CSS styling rules",
+      "To handle server-side database connections"
+    ],
+    "correctAnswer": "To optimize rendering performance by minimizing direct DOM manipulations"
+  },
+  {
+    "id": 3,
+    "question": "Which method is used to add one or more elements to the end of an array in JavaScript?",
+    "options": [
+      "push()",
+      "pop()",
+      "shift()",
+      "unshift()"
+    ],
+    "correctAnswer": "push()"
+  },
+  {
+    "id": 4,
+    "question": "What will `typeof NaN` evaluate to in JavaScript?",
+    "options": [
+      "number",
+      "undefined",
+      "object",
+      "NaN"
+    ],
+    "correctAnswer": "number"
+  },
+  {
+    "id": 5,
+    "question": "In CSS Flexbox, which property aligns items along the cross axis?",
+    "options": [
+      "justify-content",
+      "align-items",
+      "flex-direction",
+      "align-content"
+    ],
+    "correctAnswer": "align-items"
+  },
+  {
+    "id": 6,
+    "question": "Which HTTP status code signifies that a requested resource was not found?",
+    "options": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ],
+    "correctAnswer": "404"
+  },
+  {
+    "id": 7,
+    "question": "Which JavaScript keyword is used to declare a block-scoped variable that cannot be reassigned?",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "static"
+    ],
+    "correctAnswer": "const"
+  },
+  {
+    "id": 8,
+    "question": "What does the `useEffect` hook with an empty dependency array `[]` represent?",
+    "options": [
+      "It runs before every render cycle",
+      "It runs once after the initial render (component mount)",
+      "It prevents the component from rendering",
+      "It triggers every time any state variable changes"
+    ],
+    "correctAnswer": "It runs once after the initial render (component mount)"
+  },
+  {
+    "id": 9,
+    "question": "Which operator is known as the Nullish Coalescing operator in modern JavaScript?",
+    "options": [
+      "||",
+      "&&",
+      "??",
+      "?:"
+    ],
+    "correctAnswer": "??"
+  },
+  {
+    "id": 10,
+    "question": "What is the purpose of the `key` prop when rendering a list of elements in React?",
+    "options": [
+      "To style individual list items",
+      "To help React identify which items have changed, been added, or been removed",
+      "To bind click event handlers to each item",
+      "To automatically sort the array of elements"
+    ],
+    "correctAnswer": "To help React identify which items have changed, been added, or been removed"
+  }
+]
